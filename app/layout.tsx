@@ -9,21 +9,18 @@ const font = Open_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Team Chat Application',
-  description: 'Lin Discord',
+  description: 'Lin Discord'
 }
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode
 }) {
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
-        <body className={cn(
-          font.className,
-          'bg-white dark:bg-[#313338]'
-        )}>
+        <body className={cn(font.className, 'bg-white dark:bg-[#313338]')}>
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
